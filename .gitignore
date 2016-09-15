@@ -1,4 +1,4 @@
-#忽略windows生成的缩略图文件
+﻿#忽略windows生成的缩略图文件
 Thunbs.db
 #忽略Visual Studio生成时的产生的文件
 *.obj
@@ -25,3 +25,4 @@ Thunbs.db
 obj/
 [Rr]elease*/
 _ReSharper*/
+Win_lib
