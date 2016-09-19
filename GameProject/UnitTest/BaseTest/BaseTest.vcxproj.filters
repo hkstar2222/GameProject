@@ -8,6 +8,9 @@
     <Filter Include="Random">
       <UniqueIdentifier>{154cb9ff-9ea5-4143-bc99-9da4b2ed5e72}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Time">
+      <UniqueIdentifier>{c551da4b-1afd-4c85-ae55-69ba5f16dae7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -15,6 +18,9 @@
     </ClCompile>
     <ClCompile Include="RandomTest.cpp">
       <Filter>Random</Filter>
+    </ClCompile>
+    <ClCompile Include="SysTimeTest.cpp">
+      <Filter>Time</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -28,5 +28,5 @@ _INT TEST_FUNC::testRandom()
 		D_LOG("%d => %d \n", itor->first, itor->second);
 	}
 
-	return 0;
+	return TEST_RET::SUCCESS;
 }

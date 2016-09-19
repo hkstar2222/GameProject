@@ -8,6 +8,9 @@
     <Filter Include="Base">
       <UniqueIdentifier>{054a562f-fb80-4f79-8272-eddccdbad1ed}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Time">
+      <UniqueIdentifier>{1818cc5d-1072-4aa8-bf82-6a2069bfdd92}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Random.h">
@@ -16,10 +19,16 @@
     <ClInclude Include="SysAPI.h">
       <Filter>Base</Filter>
     </ClInclude>
+    <ClInclude Include="SysTime.h">
+      <Filter>Time</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Random.cpp">
       <Filter>Random</Filter>
+    </ClCompile>
+    <ClCompile Include="SysTime.cpp">
+      <Filter>Time</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

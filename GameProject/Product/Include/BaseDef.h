@@ -5,8 +5,12 @@
 
 #include <stdint.h>
 
+typedef uint32_t		_UINT_32;
+typedef uint64_t		_UINT_64;
+
 typedef int32_t			_INT_32;
 typedef int64_t			_INT_64;
+
 typedef int				_INT;
 typedef unsigned int	_UINT;
 

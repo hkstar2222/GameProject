@@ -47,7 +47,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>..\Include\</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>DLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DLL_EXPORTS;PLATFORM_WIN</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -71,9 +71,11 @@
   <ItemGroup>
     <ClInclude Include="SysAPI.h" />
     <ClInclude Include="Random.h" />
+    <ClInclude Include="SysTime.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Random.cpp" />
+    <ClCompile Include="SysTime.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

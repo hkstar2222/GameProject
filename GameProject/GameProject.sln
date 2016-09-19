@@ -8,6 +8,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{2E966645-6C7E-4CF4-8C78-AF96C02A6148}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Include", "Include", "{15778ABA-D794-470D-A2FD-78AE4C468DEF}"
+	ProjectSection(SolutionItems) = preProject
+		Product\Include\BaseDef.h = Product\Include\BaseDef.h
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Base", "Product\Base\Base.vcxproj", "{37ADC60E-3B6D-466C-8E77-B20C86B16E66}"
 EndProject
