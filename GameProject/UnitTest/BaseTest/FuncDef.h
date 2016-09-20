@@ -15,6 +15,9 @@ namespace TEST_FUNC
 	_INT testPassTime();
 
 	_INT testCurTime();
+
+	_INT testXmlTool();
+
 };
 
 

@@ -16,6 +16,10 @@ typedef unsigned int	_UINT;
 
 typedef double	_DOUBLE;
 
+typedef bool	_BOOL;
+
+#define _NEW	new
+#define _DELETE delete
 
 //动态库导入导出
 #ifdef DLL_EXPORTS

@@ -11,6 +11,9 @@
     <Filter Include="Time">
       <UniqueIdentifier>{c551da4b-1afd-4c85-ae55-69ba5f16dae7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Xml">
+      <UniqueIdentifier>{bf71587e-65ad-4ad3-b1d5-e09d3abf9f7c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -21,6 +24,9 @@
     </ClCompile>
     <ClCompile Include="SysTimeTest.cpp">
       <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlToolTest.cpp">
+      <Filter>Xml</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

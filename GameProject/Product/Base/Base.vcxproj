@@ -47,7 +47,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>..\Include\</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>DLL_EXPORTS;PLATFORM_WIN</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DLL_EXPORTS;WIN32</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>

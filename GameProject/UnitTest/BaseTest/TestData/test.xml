@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<info>
+		<NodeA type="AA" name="12345"/>
+	</info>
+	<!-- this is a comment -->
+</root>

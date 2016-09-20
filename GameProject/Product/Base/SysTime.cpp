@@ -1,7 +1,7 @@
 #include "SysTime.h"
 #include <time.h>
 
-#ifdef PLATFORM_WIN
+#ifdef WIN32
 #include <windows.h>
 
 SysTime_st SysTime::getCurSysTime()
@@ -46,7 +46,7 @@ _UINT_64 SysTime::getPassTime()
 	return (_UINT_64)(nSec * 1000000);
 }
 
-#endif // PLATFORM_WIN
+#endif // WIN32
 
 //
 //#include <iostream>  
