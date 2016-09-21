@@ -14,6 +14,9 @@
     <Filter Include="Xml">
       <UniqueIdentifier>{bf71587e-65ad-4ad3-b1d5-e09d3abf9f7c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Log">
+      <UniqueIdentifier>{3451c7fd-2074-4c78-9ab9-ca29fd1453f3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -27,6 +30,9 @@
     </ClCompile>
     <ClCompile Include="XmlToolTest.cpp">
       <Filter>Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="LogTest.cpp">
+      <Filter>Log</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

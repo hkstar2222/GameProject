@@ -5,22 +5,22 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Base">
-      <UniqueIdentifier>{054a562f-fb80-4f79-8272-eddccdbad1ed}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Time">
       <UniqueIdentifier>{1818cc5d-1072-4aa8-bf82-6a2069bfdd92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Log">
+      <UniqueIdentifier>{a8b65c75-6eaf-494c-a8e0-a92443fefb0e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Random.h">
       <Filter>Random</Filter>
     </ClInclude>
-    <ClInclude Include="SysAPI.h">
-      <Filter>Base</Filter>
-    </ClInclude>
     <ClInclude Include="SysTime.h">
       <Filter>Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Log</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -29,6 +29,9 @@
     </ClCompile>
     <ClCompile Include="SysTime.cpp">
       <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>Log</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

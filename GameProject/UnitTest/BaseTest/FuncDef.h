@@ -1,10 +1,10 @@
 #include "BaseDef.h"
-#include "SysAPI.h"
+#include <stdio.h>
 
 enum TEST_RET
 {
 	SUCCESS = 0,
-
+	FAILED = -1,
 };
 
 
@@ -17,6 +17,8 @@ namespace TEST_FUNC
 	_INT testCurTime();
 
 	_INT testXmlTool();
+
+	_INT testLog();
 
 };
 

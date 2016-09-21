@@ -8,7 +8,7 @@ _INT TEST_FUNC::testCurTime()
 
 	curTime = SysTime::getCurSysTime();
 
-	D_LOG("%4d/%02d/%02d %02d:%02d:%02d.%03d ÐÇÆÚ%1d UTC=%d\n", 
+	printf("%4d/%02d/%02d %02d:%02d:%02d.%03d ÐÇÆÚ%1d UTC=%d\n", 
 		curTime.m_nYear, curTime.m_nMonth, curTime.m_nDay, 
 		curTime.m_nHour, curTime.m_nMinute, curTime.m_nSecond, curTime.m_nMillisecond, 
 		curTime.m_nDayOfWeek, curTime.m_nUTCSecond);
@@ -32,7 +32,7 @@ _INT TEST_FUNC::testPassTime()
 
 	_UINT_64 ret = objSysTime.getPassTime();
 
-	D_LOG("Pass time = %lld \n", ret);
+	printf("Pass time = %lld \n", ret);
 
 	return TEST_RET::SUCCESS;
 }

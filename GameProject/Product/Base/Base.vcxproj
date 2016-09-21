@@ -47,7 +47,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>..\Include\</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>DLL_EXPORTS;WIN32</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DLL_EXPORTS;WIN32;DEBUG_PRINT</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -69,11 +69,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="SysAPI.h" />
+    <ClInclude Include="Log.h" />
     <ClInclude Include="Random.h" />
     <ClInclude Include="SysTime.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Log.cpp" />
     <ClCompile Include="Random.cpp" />
     <ClCompile Include="SysTime.cpp" />
   </ItemGroup>

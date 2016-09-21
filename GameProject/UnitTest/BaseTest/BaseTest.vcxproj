@@ -47,7 +47,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>..\..\Product\Include;..\..\Product\Base;..\..\Product\XmlTool</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;DEBUG_LOG</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -70,6 +70,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="LogTest.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="XmlToolTest.cpp" />
     <ClCompile Include="RandomTest.cpp" />

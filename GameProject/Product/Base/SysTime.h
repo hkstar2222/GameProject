@@ -1,8 +1,9 @@
 #ifndef _SYS_TIME_H_
 #define _SYS_TIME_H_
 
-#include "BaseDef.h"
+//时间相关的应用接口
 
+#include "BaseDef.h"
 
 struct SysTime_st
 {

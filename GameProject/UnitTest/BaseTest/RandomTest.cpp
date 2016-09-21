@@ -25,7 +25,7 @@ _INT TEST_FUNC::testRandom()
 
 	for (; itor != retList.end(); ++itor)
 	{
-		D_LOG("%d => %d \n", itor->first, itor->second);
+		printf("%d => %d \n", itor->first, itor->second);
 	}
 
 	return TEST_RET::SUCCESS;
