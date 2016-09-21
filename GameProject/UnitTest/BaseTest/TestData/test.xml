@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 	<info>
-		<NodeA type="AA" name="12345"/>
+		<NodeA name="hkstar" num="40" flag="false" double="3.14" ch="阿里山快递和"/>
 	</info>
+
+	<infoList>
+		<Item ID="1" name="a" />
+		<Item ID="2" name="b" />
+		<Item ID="3" name="c" />
+		<Item ID="4" name="d" />
+		<Item ID="5" name="e" />
+		<Item ID="6" name="f" />
+		<Item ID="7" name="g" />
+		<Item ID="8" name="h" />
+	</infoList>
+
 	<!-- this is a comment -->
 </root>

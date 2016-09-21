@@ -1,27 +1,6 @@
 #include "XmlTool.h"
-//#include "mxml.h"
 #include "tinyxml.h"
 
-//_BOOL XmlTool::openXmlFile(const std::string& p_strFileName)
-//{
-//	//FILE* pFile = fopen(p_strFileName.c_str(), "r");
-//
-//	//if (pFile == NULL)
-//	//{
-//	//	return false;
-//	//}
-//
-//	//fseek(pFile, 0, SEEK_SET);
-//
-//	//int ch = getc(pFile);
-//
-//	//mxml_node_t *top = NULL;
-//	//mxml_node_t	*p = mxmlLoadFile(top, pFile, NULL);
-//
-//	//fclose(pFile);
-//
-//	return true;
-//}
 
 _BOOL XmlTool::parseXmlFile(const std::string& p_strFileName, XmlNode& p_pobjNode)
 {
@@ -38,17 +17,31 @@ _BOOL XmlTool::parseXmlFile(const std::string& p_strFileName, XmlNode& p_pobjNod
 	}
 	fclose(pFile);
 
-	void* p = (void*)pobjTiXmlDocument->RootElement();
-	if (p == NULL)
-	{
-		return false;
-	}
-	
-	p_pobjNode.setNode(p);
+	p_pobjNode.setNode((void*)pobjTiXmlDocument);
 	return true;
 }
 
+//_BOOL XmlTool::saveXmlFile(const XmlNode& p_pobjNode, const std::string& p_strFileName)
+//{
+//	FILE* pFile = fopen(p_strFileName.c_str(), "w+");
+//	if (pFile == NULL) {
+//		return false;
+//	}
+//
+//	return true;
+//}
+//
+//_BOOL XmlTool::createXmlNode(const std::string& p_strName, XmlNode& p_objNode)
+//{
+//	TiXmlElement* p = new TiXmlElement(p_strName);
+//	p_objNode.setNode(p);
+//	return true;
+//}
 
+void XmlTool::releaseXmlNode(XmlNode& p_objNode)
+{
+	p_objNode.cleanNode();
+}
 
 
 
