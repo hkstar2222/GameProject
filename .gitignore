@@ -21,6 +21,7 @@ Thunbs.db
 [Bb]in
 [Dd]ebug*/
 *.lib
+*.dll
 *.sbr
 Actor/Library/
 [Rr]elease*/
