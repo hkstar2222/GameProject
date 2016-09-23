@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CharacterList>
+	<Character ID="1" Name="name1" HP="110" MP="220" ATK="30" DEF="10"/>
+</CharacterList>

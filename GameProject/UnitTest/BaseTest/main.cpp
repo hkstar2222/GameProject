@@ -1,13 +1,7 @@
 #include "FuncDef.h"
-#include <malloc.h>
-
-
-
 
 int main()
 {
-
-	//TEST_FUNC::testXmlTool();
 
 	//TEST_FUNC::testPassTime();
 

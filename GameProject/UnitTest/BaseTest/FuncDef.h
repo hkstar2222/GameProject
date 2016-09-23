@@ -16,8 +16,6 @@ namespace TEST_FUNC
 
 	_INT testCurTime();
 
-	_INT testXmlTool();
-
 	_INT testLog();
 
 };
