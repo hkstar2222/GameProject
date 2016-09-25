@@ -12,6 +12,7 @@ Thunbs.db
 *_p.c
 *.ncb
 *.suo
+*.sdf
 *.tlb
 *.tlh
 *.bak
@@ -22,6 +23,7 @@ Thunbs.db
 [Dd]ebug*/
 *.lib
 *.dll
+*.[dll]
 *.sbr
 Actor/Library/
 [Rr]elease*/
