@@ -45,21 +45,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Demo\Examples\Getting Started\Scripts\BasicPlatformerController.cs" />
-     <Compile Include="Assets\Demo\Examples\Getting Started\Scripts\ConstrainedCamera.cs" />
-     <Compile Include="Assets\Demo\Examples\Getting Started\Scripts\Raptor.cs" />
-     <Compile Include="Assets\Demo\Examples\Getting Started\Scripts\SpineBeginnerTwo.cs" />
-     <Compile Include="Assets\Demo\Examples\Getting Started\Scripts\SpineBlinkPlayer.cs" />
-     <Compile Include="Assets\Demo\Examples\Getting Started\Scripts\SpineboyBeginnerInput.cs" />
-     <Compile Include="Assets\Demo\Examples\Getting Started\Scripts\SpineboyBeginnerModel.cs" />
-     <Compile Include="Assets\Demo\Examples\Getting Started\Scripts\SpineboyBeginnerView.cs" />
-     <Compile Include="Assets\Demo\Examples\Scripts\Chimera.cs" />
-     <Compile Include="Assets\Demo\Examples\Scripts\FootSoldierExample.cs" />
-     <Compile Include="Assets\Demo\Examples\Scripts\Goblins.cs" />
-     <Compile Include="Assets\Demo\Examples\Scripts\RaggedySpineboy.cs" />
-     <Compile Include="Assets\Demo\Examples\Scripts\SpineGauge.cs" />
-     <Compile Include="Assets\Demo\Examples\Scripts\Spineboy.cs" />
-     <Compile Include="Assets\Demo\Examples\Scripts\SpineboyPole.cs" />
      <Compile Include="Assets\DragonBone\Com\Viperstudio\Events\Event.cs" />
      <Compile Include="Assets\DragonBone\Com\Viperstudio\Events\EventDispatcher.cs" />
      <Compile Include="Assets\DragonBone\Com\Viperstudio\Geom\ColorTransform.cs" />
@@ -116,6 +101,8 @@
      <Compile Include="Assets\DragonBone\DragonBones\Utils\DBDataUtil.cs" />
      <Compile Include="Assets\DragonBone\DragonBones\Utils\TransformUtil.cs" />
      <Compile Include="Assets\DragonBone\DragonBones\Utils\parseOldXMLData.cs" />
+     <Compile Include="Assets\GameProject\Script\BasicPlatformerController.cs" />
+     <Compile Include="Assets\GameProject\Script\ConstrainedCamera.cs" />
      <Compile Include="Assets\spine-csharp\Animation.cs" />
      <Compile Include="Assets\spine-csharp\AnimationState.cs" />
      <Compile Include="Assets\spine-csharp\AnimationStateData.cs" />
@@ -193,28 +180,16 @@
      <Compile Include="Assets\spine-unity\SkeletonUtility\SkeletonUtilitySubmeshRenderer.cs" />
      <Compile Include="Assets\spine-unity\SpineAttributes.cs" />
      <None Include="Assets\spine-unity\Editor\Resources\SpineAssetDatabaseMarker.txt" />
-     <None Include="Assets\Demo\Examples\Spine\Eyes\eyes.atlas.txt" />
      <None Include="Assets\spine-unity\Shaders\HiddenPass.shader" />
-     <None Include="Assets\Demo\Examples\Spine\Gauge\Gauge.atlas.txt" />
-     <None Include="Assets\Demo\Examples\Spine\FootSoldier\FS_White.atlas.txt" />
      <None Include="Assets\spine-unity\Modules\CustomMaterials\readme.txt" />
-     <None Include="Assets\Demo\Examples\Spine\Hero\hero-mesh.atlas.txt" />
-     <None Include="Assets\Demo\Examples\Spine\Dragon\license.txt" />
-     <None Include="Assets\Demo\Examples\Spine\Hero\license.txt" />
-     <None Include="Assets\Demo\Examples\Spine\Goblins\goblins.atlas.txt" />
-     <None Include="Assets\Demo\Examples\Spine\Raptor\raptor.atlas.txt" />
-     <None Include="Assets\Demo\Examples\Spine\Spineboy\spineboy.atlas.txt" />
-     <None Include="Assets\Demo\Examples\Spine\FootSoldier\license.txt" />
-     <None Include="Assets\Demo\Examples\Spine\Raggedy Spineboy\Raggedy Spineboy.atlas.txt" />
+     <None Include="Assets\GameProject\Resouce\hero\hero-mesh.atlas.txt" />
+     <None Include="Assets\GameProject\Resouce\hero\license.txt" />
      <None Include="Assets\spine-unity\Shaders\Bones.shader" />
      <None Include="Assets\spine-unity\Modules\Ghost\Shaders\SkeletonGhost.shader" />
-     <None Include="Assets\Demo\Examples\Spine\Dragon\dragon.atlas.txt" />
      <None Include="Assets\spine-unity\Modules\SkeletonGraphic\Shaders\SkeletonGraphic.shader" />
      <None Include="Assets\spine-unity\Shaders\Skeleton.shader" />
-     <None Include="Assets\Demo\Examples\Spine\Spineunitygirl\Doi.atlas.txt" />
      <None Include="Assets\spine-unity\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.txt" />
      <None Include="Assets\spine-unity\Shaders\SkeletonLit.shader" />
-     <None Include="Assets\Demo\Examples\Spine\FootSoldier\Equipment\Equipment.atlas.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -4,6 +4,7 @@ Thunbs.db
 *.meta
 Actor/Library/
 Actor/Temp/
+Actor/obj/
 #忽略Visual Studio生成时的产生的文件
 *.obj
 *.exe

@@ -68,28 +68,16 @@
      <Compile Include="Assets\spine-unity\SkeletonUtility\Editor\SkeletonUtilityInspector.cs" />
      <Compile Include="Assets\spine-unity\SkeletonUtility\Editor\SkeletonUtilitySubmeshRendererInspector.cs" />
      <None Include="Assets\spine-unity\Editor\Resources\SpineAssetDatabaseMarker.txt" />
-     <None Include="Assets\Demo\Examples\Spine\Eyes\eyes.atlas.txt" />
      <None Include="Assets\spine-unity\Shaders\HiddenPass.shader" />
-     <None Include="Assets\Demo\Examples\Spine\Gauge\Gauge.atlas.txt" />
-     <None Include="Assets\Demo\Examples\Spine\FootSoldier\FS_White.atlas.txt" />
      <None Include="Assets\spine-unity\Modules\CustomMaterials\readme.txt" />
-     <None Include="Assets\Demo\Examples\Spine\Hero\hero-mesh.atlas.txt" />
-     <None Include="Assets\Demo\Examples\Spine\Dragon\license.txt" />
-     <None Include="Assets\Demo\Examples\Spine\Hero\license.txt" />
-     <None Include="Assets\Demo\Examples\Spine\Goblins\goblins.atlas.txt" />
-     <None Include="Assets\Demo\Examples\Spine\Raptor\raptor.atlas.txt" />
-     <None Include="Assets\Demo\Examples\Spine\Spineboy\spineboy.atlas.txt" />
-     <None Include="Assets\Demo\Examples\Spine\FootSoldier\license.txt" />
-     <None Include="Assets\Demo\Examples\Spine\Raggedy Spineboy\Raggedy Spineboy.atlas.txt" />
+     <None Include="Assets\GameProject\Resouce\hero\hero-mesh.atlas.txt" />
+     <None Include="Assets\GameProject\Resouce\hero\license.txt" />
      <None Include="Assets\spine-unity\Shaders\Bones.shader" />
      <None Include="Assets\spine-unity\Modules\Ghost\Shaders\SkeletonGhost.shader" />
-     <None Include="Assets\Demo\Examples\Spine\Dragon\dragon.atlas.txt" />
      <None Include="Assets\spine-unity\Modules\SkeletonGraphic\Shaders\SkeletonGraphic.shader" />
      <None Include="Assets\spine-unity\Shaders\Skeleton.shader" />
-     <None Include="Assets\Demo\Examples\Spine\Spineunitygirl\Doi.atlas.txt" />
      <None Include="Assets\spine-unity\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.txt" />
      <None Include="Assets\spine-unity\Shaders\SkeletonLit.shader" />
-     <None Include="Assets\Demo\Examples\Spine\FootSoldier\Equipment\Equipment.atlas.txt" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
