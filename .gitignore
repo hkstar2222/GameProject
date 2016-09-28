@@ -1,5 +1,9 @@
 ﻿#忽略windows生成的缩略图文件
 Thunbs.db
+#忽略unity生成的缓存文件
+*.meta
+Actor/Library/
+Actor/Temp/
 #忽略Visual Studio生成时的产生的文件
 *.obj
 *.exe
@@ -25,7 +29,7 @@ Thunbs.db
 *.dll
 *.[dll]
 *.sbr
-Actor/Library/
+
 [Rr]elease*/
 _ReSharper*/
 Win_lib
