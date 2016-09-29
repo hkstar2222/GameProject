@@ -18,6 +18,7 @@ namespace TEST_FUNC
 
 	_INT testLog();
 
+	_INT testDbServer();
 };
 
 
