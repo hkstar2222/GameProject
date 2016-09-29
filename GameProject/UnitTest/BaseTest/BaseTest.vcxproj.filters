@@ -14,9 +14,6 @@
     <Filter Include="Log">
       <UniqueIdentifier>{3451c7fd-2074-4c78-9ab9-ca29fd1453f3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="DbServer">
-      <UniqueIdentifier>{92d3964f-81b2-4073-bcbf-44b261279cd4}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -30,9 +27,6 @@
     </ClCompile>
     <ClCompile Include="LogTest.cpp">
       <Filter>Log</Filter>
-    </ClCompile>
-    <ClCompile Include="DbServer.cpp">
-      <Filter>DbServer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

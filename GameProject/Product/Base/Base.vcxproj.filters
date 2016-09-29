@@ -11,6 +11,12 @@
     <Filter Include="Log">
       <UniqueIdentifier>{a8b65c75-6eaf-494c-a8e0-a92443fefb0e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Lock">
+      <UniqueIdentifier>{d0316491-1a88-428d-9d7a-80181d73f09e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Thread">
+      <UniqueIdentifier>{881d2608-048a-4835-9efc-47030e297ff6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Random.h">
@@ -22,6 +28,12 @@
     <ClInclude Include="Log.h">
       <Filter>Log</Filter>
     </ClInclude>
+    <ClInclude Include="Lock.h">
+      <Filter>Lock</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Random.cpp">
@@ -32,6 +44,12 @@
     </ClCompile>
     <ClCompile Include="Log.cpp">
       <Filter>Log</Filter>
+    </ClCompile>
+    <ClCompile Include="Lock.cpp">
+      <Filter>Lock</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread.cpp">
+      <Filter>Thread</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

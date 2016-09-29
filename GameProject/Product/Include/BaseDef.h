@@ -3,6 +3,7 @@
 
 //定义基本变量类型
 #include <stdint.h>
+#include <stdio.h>
 
 typedef uint32_t		_UINT_32;
 typedef uint64_t		_UINT_64;
