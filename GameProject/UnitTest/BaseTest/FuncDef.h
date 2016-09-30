@@ -10,13 +10,15 @@ enum TEST_RET
 
 namespace TEST_FUNC
 {
-	_INT testRandom();
+	TEST_RET testRandom();
 
-	_INT testPassTime();
+	TEST_RET testPassTime();
 
-	_INT testCurTime();
+	TEST_RET testCurTime();
 
-	_INT testLog();
+	TEST_RET testLog();
+
+	TEST_RET testThread();
 
 };
 

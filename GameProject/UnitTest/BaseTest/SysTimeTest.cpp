@@ -2,7 +2,7 @@
 #include "SysTime.h"
 
 
-_INT TEST_FUNC::testCurTime()
+TEST_RET TEST_FUNC::testCurTime()
 {
 	SysTime_st curTime;
 
@@ -18,7 +18,7 @@ _INT TEST_FUNC::testCurTime()
 
 
 
-_INT TEST_FUNC::testPassTime()
+TEST_RET TEST_FUNC::testPassTime()
 {
 	SysTime objSysTime;
 

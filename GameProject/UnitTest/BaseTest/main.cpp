@@ -2,13 +2,6 @@
 #include <malloc.h>
 
 
-#include <Windows.h>
-
-DWORD WINAPI Func(LPVOID pM)
-{
-	return 0;
-}
-
 
 int main()
 {
@@ -20,9 +13,9 @@ int main()
 
 	//TEST_FUNC::testLog();
 
-	//DWORD(*pFunc)(LPVOID) = &Func;
 
-	CreateThread(NULL, 0, Func, NULL, 0, NULL);
+	TEST_FUNC::testThread();
+
 
 	getchar();
 }

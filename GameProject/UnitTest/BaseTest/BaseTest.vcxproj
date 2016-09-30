@@ -74,6 +74,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="RandomTest.cpp" />
     <ClCompile Include="SysTimeTest.cpp" />
+    <ClCompile Include="ThreadTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FuncDef.h" />

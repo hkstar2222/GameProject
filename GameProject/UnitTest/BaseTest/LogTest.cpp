@@ -1,7 +1,7 @@
 #include "FuncDef.h"
 
 
-_INT TEST_FUNC::testLog()
+TEST_RET TEST_FUNC::testLog()
 {
 	D_LOG("%s %d", "dfdf", 123);
 

@@ -1,16 +1,30 @@
 #include "Thread.h"
 
 
+#ifdef WIN32
+#include <Windows.h>
+
+#define THREAD_NAME_LEN	 64
+
+struct ThreadInfo_st
+{
+	char		m_szThreadName[THREAD_NAME_LEN];
+	_INT(*m_pFunc)() = NULL;
+	_BOOL		m_bRunFlag = false;
+	_INT		m_nHandler = 0;
+};
+
 namespace NS_Thread
 {
 	DWORD WINAPI Func(LPVOID pM)
 	{
-		_INT(*pFunc)(void) = (_INT(*)(void))pM;
+		ThreadInfo_st* pThreadInfo = (ThreadInfo_st*)pM;
 
-		while (true)
+		while (pThreadInfo->m_bRunFlag)
 		{
-			if (pFunc() != 0)
+			if (pThreadInfo->m_pFunc() != Thread::RET_CONTINUE)
 			{
+				pThreadInfo->m_bRunFlag = false;
 				break;
 			}
 		}
@@ -20,42 +34,57 @@ namespace NS_Thread
 };
 
 
-
-
-#ifdef WIN32
-
 Thread::Thread()
+:m_stThreadInfo(new ThreadInfo_st())
 {
 
 }
 
 Thread::~Thread()
 {
-
+	stop();
+	delete m_stThreadInfo;
 }
 
 
 
-_INT Thread::init(_INT(*p_pFunc)(void), const char* p_strThreadName)
+_BOOL Thread::init(_INT(*p_pFunc)(void), const char* p_strThreadName)
 {
-	m_pFunc = p_pFunc;
+	m_stThreadInfo->m_pFunc = p_pFunc;
+	strcpy_s(m_stThreadInfo->m_szThreadName, sizeof(m_stThreadInfo->m_szThreadName) - 1, p_strThreadName);
 
-	//DWORD (*pFunc)(LPVOID) = &Func;
-	
-	CreateThread(NULL, 0, NS_Thread::Func, m_pFunc, 0, NULL);
-
-
-	return 0;
+	return true;
 }
 
 _BOOL Thread::start()
 {
+	if (m_stThreadInfo->m_bRunFlag)
+	{
+		return true;
+	}
+
+	m_stThreadInfo->m_bRunFlag = true;
+	HANDLE hHandle = CreateThread(NULL, 0, NS_Thread::Func, m_stThreadInfo, 0, NULL);
+	m_stThreadInfo->m_nHandler = (_INT)hHandle;
+
 	return true;
 }
 
 _BOOL Thread::stop()
 {
-	return false;
+	m_stThreadInfo->m_bRunFlag = false;
+	DWORD ret = STILL_ACTIVE;
+	while (true)
+	{
+		BOOL bRet = GetExitCodeThread((void*)m_stThreadInfo->m_nHandler, &ret);
+		if (ret != STILL_ACTIVE)
+		{
+			break;
+		}
+	}
+
+	CloseHandle((void*)m_stThreadInfo->m_nHandler);
+	return true;
 }
 
 

@@ -14,6 +14,9 @@
     <Filter Include="Log">
       <UniqueIdentifier>{3451c7fd-2074-4c78-9ab9-ca29fd1453f3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Thread">
+      <UniqueIdentifier>{82592012-5e7d-4f14-b3b2-558b2377888e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -27,6 +30,9 @@
     </ClCompile>
     <ClCompile Include="LogTest.cpp">
       <Filter>Log</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadTest.cpp">
+      <Filter>Thread</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

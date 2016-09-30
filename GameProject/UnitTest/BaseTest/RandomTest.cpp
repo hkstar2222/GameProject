@@ -3,7 +3,7 @@
 
 #include <map>
 
-_INT TEST_FUNC::testRandom()
+TEST_RET TEST_FUNC::testRandom()
 {
 	_INT nMin = 1;
 	_INT nMax = 2;
