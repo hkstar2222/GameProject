@@ -2,6 +2,18 @@
 #include "SysTime.h"
 
 
+TEST_RET TEST_FUNC::testSleepTime()
+{
+	for (_UINT i = 0; i < 10; ++i)
+	{
+		printf("wait 1s \n");
+		SysTime::wait(1000);
+	}
+	
+	return TEST_RET::SUCCESS;
+}
+
+
 TEST_RET TEST_FUNC::testCurTime()
 {
 	SysTime_st curTime;

@@ -4,6 +4,12 @@
 #ifdef WIN32
 #include <windows.h>
 
+
+void SysTime::wait(_UINT p_nMillisecond)
+{
+	Sleep(p_nMillisecond);
+}
+
 SysTime_st SysTime::getCurSysTime()
 {
 	SYSTEMTIME sys;

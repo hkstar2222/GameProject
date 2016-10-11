@@ -9,13 +9,11 @@ int main()
 
 	//TEST_FUNC::testPassTime();
 
-	//TEST_FUNC::testCurTime();
+	//TEST_FUNC::testSleepTime();
 
 	//TEST_FUNC::testLog();
 
-
 	TEST_FUNC::testThread();
-
 
 	getchar();
 }

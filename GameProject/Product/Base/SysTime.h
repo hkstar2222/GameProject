@@ -20,17 +20,19 @@ struct SysTime_st
 
 };
 
-class SysTime
+class DLL_API SysTime
 {
 public:
+	//等待	单位毫秒
+	static void wait(_UINT p_nMillisecond);
 
 	//获取当前的时间
-	DLL_API static SysTime_st getCurSysTime();
+	static SysTime_st getCurSysTime();
 
 	//以下用于程序运行时间计时
-	DLL_API void setBeginTime();	//标记开始时间
-	DLL_API void setEndTime();		//标记结束时间
-	DLL_API _UINT_64 getPassTime();		//获得 setBeginTime 和 setEndTime 间的经过时间	单位微秒
+	void setBeginTime();	//标记开始时间
+	void setEndTime();		//标记结束时间
+	_UINT_64 getPassTime();		//获得 setBeginTime 和 setEndTime 间的经过时间	单位微秒
 
 private:
 

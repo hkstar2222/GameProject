@@ -22,9 +22,14 @@ public:
 
 	_BOOL init(_INT(*p_pFunc)(void), const char* p_strThreadName);
 
+	_BOOL init(_INT(*p_pFunc)(void), const char* p_strThreadName, void* p_pObjPoint);
+
 	_BOOL start();
 
 	_BOOL stop();
+
+private:
+	_INT Func(void* pM);
 
 private:
 	ThreadInfo_st*	m_stThreadInfo;

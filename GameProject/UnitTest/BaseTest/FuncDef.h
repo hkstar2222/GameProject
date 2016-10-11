@@ -20,6 +20,7 @@ namespace TEST_FUNC
 
 	TEST_RET testThread();
 
+	TEST_RET testSleepTime();
 };
 
 
