@@ -13,7 +13,9 @@ int main()
 
 	//TEST_FUNC::testLog();
 
-	TEST_FUNC::testThread();
+	//TEST_FUNC::testThread();
+
+	TEST_FUNC::testThreadCreate_mem();
 
 	getchar();
 }

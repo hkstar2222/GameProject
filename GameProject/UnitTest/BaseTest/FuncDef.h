@@ -21,6 +21,8 @@ namespace TEST_FUNC
 	TEST_RET testThread();
 
 	TEST_RET testSleepTime();
+
+	TEST_RET testThreadCreate_mem();	//ÄÚÑ­»·  ²âÄÚ´æĞ¹Â©
 };
 
 
