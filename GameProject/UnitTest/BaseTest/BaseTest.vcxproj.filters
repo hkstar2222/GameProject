@@ -17,6 +17,9 @@
     <Filter Include="Thread">
       <UniqueIdentifier>{82592012-5e7d-4f14-b3b2-558b2377888e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Lock">
+      <UniqueIdentifier>{2379ecf2-d6e8-492f-b94f-22a65e5b1b0c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -33,6 +36,9 @@
     </ClCompile>
     <ClCompile Include="ThreadTest.cpp">
       <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="LockTest.cpp">
+      <Filter>Lock</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

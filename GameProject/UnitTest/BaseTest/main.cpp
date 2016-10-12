@@ -15,7 +15,9 @@ int main()
 
 	//TEST_FUNC::testThread();
 
-	TEST_FUNC::testThreadCreate_mem();
+	//TEST_FUNC::testThreadCreate_mem();
+
+	TEST_FUNC::testLockClass();
 
 	getchar();
 }

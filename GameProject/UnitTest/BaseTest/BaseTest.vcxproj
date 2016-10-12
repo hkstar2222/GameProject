@@ -70,6 +70,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="LockTest.cpp" />
     <ClCompile Include="LogTest.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="RandomTest.cpp" />
