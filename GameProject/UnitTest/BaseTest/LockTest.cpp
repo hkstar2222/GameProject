@@ -20,7 +20,10 @@ public:
 	_INT _THREAD_FUNC_ del()
 	{
 		LOCK_MUTEX(m_objMutexLock);
-		m_objList.pop_back();
+		if (m_objList.size() != 0)
+		{
+			m_objList.pop_back();
+		}
 		_PRINT_("List size %d\n", m_objList.size());
 
 		return Thread::RET_CONTINUE;
@@ -45,7 +48,7 @@ TEST_RET TEST_FUNC::testLockClass()
 	Thread2.init(&ResourceClass::del, &objResourceClass, "delThread");
 
 	Thread1.start();
-//	Thread2.start();
+	Thread2.start();
 
 	getchar();
 
