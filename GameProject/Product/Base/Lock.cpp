@@ -8,14 +8,14 @@ MutexLock::MutexLock(const char* p_szName)
 :m_pHandle(NULL)
 {
 	HANDLE hMutex = CreateMutex(NULL, false, p_szName);
-	if (hMutex)
-	{
-		if (ERROR_ALREADY_EXISTS == GetLastError())
-		{
-			_PRINT_("MutexLock ERROR_ALREADY_EXISTS");
-			return;
-		}
-	}
+	//if (hMutex)
+	//{
+	//	if (ERROR_ALREADY_EXISTS == GetLastError())
+	//	{
+	//		_PRINT_("MutexLock ERROR_ALREADY_EXISTS");
+	//		return;
+	//	}
+	//}
 
 	m_pHandle = (void*)hMutex;
 

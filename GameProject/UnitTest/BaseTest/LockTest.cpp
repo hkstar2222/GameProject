@@ -6,10 +6,19 @@
 
 class ResourceClass
 {
+
 public:
+
+	ResourceClass()
+		:m_objMutexLock("123")
+		, m_objMutexLock1("123")
+	{
+
+	}
 
 	_INT _THREAD_FUNC_ add()
 	{
+		LOCK_MUTEX(m_objMutexLock1);
 		LOCK_MUTEX(m_objMutexLock);
 		m_objList.push_back(0);
 		_PRINT_("List size %d\n", m_objList.size());
@@ -19,6 +28,7 @@ public:
 
 	_INT _THREAD_FUNC_ del()
 	{
+		LOCK_MUTEX(m_objMutexLock1);
 		LOCK_MUTEX(m_objMutexLock);
 		if (m_objList.size() != 0)
 		{
@@ -32,6 +42,7 @@ public:
 
 private:
 	MutexLock	m_objMutexLock;
+	MutexLock	m_objMutexLock1;
 	std::vector<_INT>	m_objList;
 };
 
